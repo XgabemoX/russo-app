@@ -937,7 +937,7 @@ if(state.notifEnabled) scheduleNotification();
 
 // Register service worker for PWA
 if('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js').catch(()=>{});
+  navigator.serviceWorker.register('/russo-app/sw.js', {scope: '/russo-app/'}).catch(()=>{});
 }
 </script>
 </body>
