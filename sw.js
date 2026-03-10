@@ -1,5 +1,5 @@
-const CACHE = 'uchistsya-v1';
-const ASSETS = ['/', '/index.html'];
+const CACHE = 'uchistsya-v2';
+const ASSETS = ['/russo-app/', '/russo-app/index.html'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
